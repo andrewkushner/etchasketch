@@ -1,0 +1,7 @@
+div #table {
+    height: 900px;
+    width: 900px;
+    background-color:white;
+    border-radius: 10px;
+    border-color: black;
+}
