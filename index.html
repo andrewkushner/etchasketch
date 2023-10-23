@@ -12,14 +12,14 @@
 </head>
 <body>
     <!-- Create a button that allows the user to input size of grid -->
-    <center><button class="newGrid">New Grid</button><button id="rbgButton">Random Color</button></center>
+    <center><button class="newGrid">New Grid</button><button id="rbgButton">Random Color</button><button onclick=clearGrid();>Clear</button></center>
     <br>
     <div id="container"></div>
     <script>
     // Used to determine if the button is toggled ON or OFF for random color generation
     let rbgToggle = 0;
     let rbgButton = document.getElementById("rbgButton");
-    
+
     rbgButton.addEventListener("click", () => {
         rbgButton.classList.toggle('clicked');
         if (rbgToggle == 0){
