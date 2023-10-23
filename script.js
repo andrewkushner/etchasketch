@@ -71,7 +71,13 @@ $(document).ready(function() {
         refreshGrid();
 
         $(".grid").mouseover(function() {
-        $(this).css("background-color", "black");
+        if (!rbgToggle == 1){
+            $(this).css("background-color", "black");
+        }
+        else {
+            randColor = randomRgb();
+            $(this).css("background-color", randColor);
+        }
         });
     });
 });
