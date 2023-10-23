@@ -1,3 +1,7 @@
+// let clearButton = document.getElementsByClassName("clearButton");
+
+// clearButton.onClick(clearGrid());
+
 function randomRgb(){
     // Using math.round we select a random number between 0 and 255
     let randNum = Math.round(0xffffff * Math.random());
@@ -33,7 +37,7 @@ function createGrid(x){
 };
 
 function clearGrid(){
-    $(".grid").remove();
+    $(".grid").css("background-color", "white");
 };
 
 function refreshGrid(){
