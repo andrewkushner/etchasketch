@@ -1,9 +1,3 @@
-// let rbgButton = document.getElementsByClassName("rbg");
-
-// rbgButton.addEventListener("click", () => {
-//     rbgButton.classList.toggle('clicked');
-// })
-
 function randomRgb(){
     // Using math.round we select a random number between 0 and 255
     let randNum = Math.round(0xffffff * Math.random());
