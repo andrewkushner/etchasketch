@@ -1,7 +1,20 @@
-div #table {
-    height: 900px;
-    width: 900px;
+#container {
+    position: relative;
+    outline: 2px solid black;
+    margin: auto;
+    font-size: 0;
+    padding: 0;
+    height: 960px;
+    width: 960px;
     background-color:white;
-    border-radius: 10px;
-    border-color: black;
+    border: none;
+}
+
+
+.grid {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 1px solid black;
+    display: inline-block;
 }

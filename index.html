@@ -2,28 +2,33 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./styles.css"></style>
+    <!-- This is required for certain usability within JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <div id="container">
-        <div id="table">
-            <div id="grid">
-                <p>fart</p>
-                <p>fart</p>
-                <p>fart</p>
-                <p>fart</p>
-                <p>fart</p>
-                <p>fart</p>
-                <p>fart</p>
-                <p>fart</p>
-                <p>fart</p>
-                <p>fart</p>
-                <p>fart</p>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript" src="./script.js"></script>
+    <!-- Create a button that allows the user to input size of grid -->
+    <center><button class="newGrid">New Grid</button><button id="rbgButton">Random Color</button></center>
+    <br>
+    <div id="container"></div>
+    <script>
+    // Used to determine if the button is toggled ON or OFF for random color generation
+    let rbgToggle = 0;
+    let rbgButton = document.getElementById("rbgButton");
+    
+    rbgButton.addEventListener("click", () => {
+        rbgButton.classList.toggle('clicked');
+        if (rbgToggle == 0){
+            rbgToggle = 1;
+        }
+        else{
+            rbgToggle = 0;
+        }
+    })
+</script>
 </body>
 </html>
