@@ -2,7 +2,7 @@
     position: relative;
     outline: 2px solid black;
     margin: auto;
-    font-size: 0;
+    font-size: 0;  /* If not set to 0 there is a white space between rows */
     padding: 0;
     height: 960px;
     width: 960px;
@@ -17,4 +17,9 @@
     border: none;
     outline: 1px solid black;
     display: inline-block;
+}
+
+#rbgButton.clicked {
+    background-color: black;
+    color: white;
 }
